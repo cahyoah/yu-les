@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'lesonline',
-	'dbdriver' => 'mysqli',
+	'hostname' => 'ec2-23-23-248-247.compute-1.amazonaws.com',
+	'username' => 'lgfzairfdptkyc',
+	'password' => '4ae0c575c2db56cd60540aaebf5f02fe573bbd149120fef4cf1710d59b29494e',
+	'database' => 'de598m39og7vg0',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
