@@ -14,7 +14,7 @@ class LocationGuruUpdateController extends CI_Controller{
         
     }
     public function updateLocation(){
-       
+       	echo "cek";
         // json response array
         $response = array("error" => FALSE);
 
