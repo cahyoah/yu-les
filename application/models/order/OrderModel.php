@@ -25,11 +25,11 @@ class OrderModel extends CI_Model {
     public function storeOrder($idMurid, $alamatMurid, $noteMurid, $idPengajar, $mataPelajaran, $totalBayar) {
         $uuid = uniqid('', true);
         //$uuid = md5(time().".".rand().".".rand());
-//         if($this->checkID($uuid) || $uuid == 0){
-//             while ($this->checkID($uuid) || $uuid ==0) {
-//                $uuid = md5(time().".".rand().".".rand());
-//             }
-//         }
+        if($this->checkID($uuid) || $uuid == 0){
+            while ($this->checkID($uuid) || $uuid ==0) {
+               $uuid = md5(time().".".rand().".".rand());
+            }
+        }
         $data = array(
                     'id_order' => $uuid,
                     'id_murid' => $idMurid,
